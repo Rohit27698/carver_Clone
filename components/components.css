@@ -4,6 +4,8 @@
     justify-content: space-between;
     background-color:#353535;
     height: 10vh;
+    position: fixed;
+    width: 100%;
 }
 #navlogo img{
     
@@ -28,6 +30,14 @@
     text-decoration: none;
     color: white;
     font-size: 19px;
+}
+#navmid a:hover{
+    color: rgb(0, 222, 238);
+    text-decoration: underline;
+}
+#navlast a:hover{
+    color: rgb(0, 222, 238);
+    text-decoration: underline;
 }
 /*  footer css */
 #footer{
@@ -82,4 +92,8 @@
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
+}
+#FOLLOW a:hover{
+    color: rgb(0, 222, 238);
+    text-decoration: underline;
 }

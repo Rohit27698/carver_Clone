@@ -10,7 +10,7 @@ const navbar = () => {
         <a href="sale.html">SALE</a>
     </div>
     <div id="navlast">
-        <img width="32" height="32" src="user.svg" alt="user">
+    <a href="login.html"><img width="32" height="32" src="user.svg" alt="user"></a>
         <h3 style="color: azure;">SEARCH</h3>
        <a href="wishlist.html">WHSHLIST</a>
        <a href="cart.html">BAG</a>
