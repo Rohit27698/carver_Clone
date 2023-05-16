@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>SURFSKATES</h1>
+<!-- SORT BY PRICE  -->
+        <select name="" id="sorting" onchange="sortPrice()" >
+            <option value="" >Select for Sorting</option>
+            <option value="lth" >Price -- Low to High</option>
+            <option value="htl" >Price -- High to low</option>
+        </select>
+
+
+
+<!-- SORT BY DISCOUNT-->
+
+<select name="" id="SortbyDiscount" onchange="sortdiscount()">
+    <option value="">DISCOUNT</option>
+    <option value="above10%">10% and above</option>
+    <option value="above20%">20% and above</option>
+    <option value="above30%">30% and above</option>
+
+</select>
+
+        
+        <div id = "container">
+
+
+        </div>
+
+    </div>
+</body>
+</html>
+<script src = "./product.js"></script>
