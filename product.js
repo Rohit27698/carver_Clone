@@ -22,6 +22,8 @@ data.map((elem)=>{
 
 let div = document.createElement("div")
 
+let a=document.createElement('a')
+a.href='prodata.html';
 
 let img = document.createElement("img")
 img.src = elem.image;
@@ -35,7 +37,8 @@ price.textContent = elem.price;
 let discount = document.createElement("p")
 discount.textContent = elem.discount;
 
-div.append(img , desc , price , discount);
+a.append(img)
+div.append(a , desc , price , discount);
 container.append(div);
 
 })
@@ -64,14 +67,48 @@ function sortPrice(){
 
 // SORT BY DISCOUNT 
 
-function sortDiscount(){
+function sortDiscount(urls){
 
     let sortDiscount = document.getElementById("SortbyDiscount").value;
     console.log(sortDiscount);
 
-    // if (sortdis=>10%) {
-    //     urls = `http://localhost:3000/products?discount=10&discount_lte=15`
+    // function sortDiscount(){
+    function filter1(){
+        let urlf1="http://localhost:3000/posts?discount_gte=10&discount_lte=20";
+        getdata(urlf1);
+      }
+      function filter2(){
+        let urlf2="http://localhost:3000/posts?discount_gte=20&discount_lte=30";
+        getdata(urlf2);
+      }
+      function filter3(){
+        let urlf3="http://localhost:3000/posts?discount_gte=30&discount_lte=40";
+        getdata(urlf3);
+      }
+    // }  
+    // sortDiscount()
+
+    // if (sortDiscount>=10%) {
+    //     urls = `http://localhost:3000/products?discount=10&discount_lte=20`
+    //     getdata(urls)
+    // }
+    // if (sortDiscount>=10%) {
+    //     urls = `http://localhost:3000/products?discount=10&discount_lte=20`
+    //     getdata(urls)
+    // }
+    // if (sortDiscount>=10%) {
+    //     urls = `http://localhost:3000/products?discount=10&discount_lte=20`
+    //     getdata(urls)
     // }
 
+
+
 }
+
+
+// function proDesc(posts){
+//     localStorage.setItem("ProductDescription", JSON.stringify(posts));
+//     window.location.href="prodata.html";
+  
+    // }
 
