@@ -21,12 +21,22 @@ document.getElementById("container").innerText = ""
 data.map((elem)=>{
 
 let div = document.createElement("div")
+div.setAttribute("id" , "detaildiv")
 
 let a=document.createElement('a')
-a.href='prodata.html';
+// a.href='prodata.html';
+a.setAttribute("href" , "prodata.html")
+a.id='anchor'
+a.addEventListener('click', function(){
+  productDescription(elem)
+})
 
 let img = document.createElement("img")
 img.src = elem.image;
+
+
+let hr = document.createElement("hr")
+hr.style.border= "3px solid rgb(23, 22, 22);";
 
 let desc = document.createElement("p")
 desc.textContent = elem.description;
@@ -37,7 +47,7 @@ price.textContent = elem.price;
 let discount = document.createElement("p")
 discount.textContent = elem.discount;
 
-a.append(img)
+a.append(img , hr)
 div.append(a , desc , price , discount);
 container.append(div);
 
@@ -74,7 +84,7 @@ function sortDiscount(urls){
 
     // function sortDiscount(){
     function filter1(){
-        let urlf1="http://localhost:3000/posts?discount_gte=10&discount_lte=20";
+        let urlf1="http://localhost:3000/posts?discount_gte=0&discount_lte=20";
         getdata(urlf1);
       }
       function filter2(){
@@ -105,6 +115,12 @@ function sortDiscount(urls){
 
 }
 
+
+let productdes=[]
+function productDescription(elem){
+  productdes.push(elem)
+  localStorage.setItem('productDetail', JSON.stringify(productdes))
+}
 
 // function proDesc(posts){
 //     localStorage.setItem("ProductDescription", JSON.stringify(posts));
