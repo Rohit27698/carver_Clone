@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluefly</title>
+    <link rel="icon" type="image/png" href="img/clogo.png" />
+    <style>
+        .slide-menu {
+            position: fixed;
+            top: 70px;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            transition: left .5s ease-in-out;
+        }
+
+        .slide-menu a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #353535;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .open-button {
+            position: fixed;
+            top: 0px;
+            left: 15px;
+            font-size: 20px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        /* styles nav */
+        .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#353535;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+}
+#navlogo img{
+    
+    width: 20vh;
+    margin-left: 5%;
+}
+#navlogo{
+    margin-left: 2%;
+}
+#navlast{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 3%;
+}
+#navmid{
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+}
+ .navbar div a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+#navmid a:hover{
+    color: rgb(0, 222, 238);
+    text-decoration: underline;
+}
+#navlast a:hover{
+    color: rgb(0, 222, 238);
+    text-decoration: underline;
+}
+#Sml{
+    margin-right: 20px;
+    gap: 20px;
+}
+.Sml a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vh;
+}
+#Sml a:hover{
+    color: rgb(0, 222, 238);
+    text-decoration: underline;
+}
+@media screen and (min-width: 1101px) {
+    #slide{
+        display: none;
+    }
+    #Sml{
+        display: none;
+    }
+
+    
+}
+@media screen and (max-width: 1100px) {
+  #navmid{
+    display: none;
+  }
+  #navlast{
+    display: none;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="slide">
+            <div class="slide-menu">
+                <a href="#" class="close-button">×</a>
+                <a href="surfscates.html">SURFSCATS</a>
+                <a href="extras.html">EXTRAS</a>
+                <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+                <a href="sale.html">SALE</a>
+                <a href="wishlist.html">WHSHLIST</a>
+            </div>
+            <button class="open-button" onclick="hideButton()"><img src="menu.png" alt=""></button>
+        </div>
+        <div id="navlogo">
+        <a href="index.htlm">
+        <img src="https://cdn11.bigcommerce.com/s-icfw6t6sn3/stencil/91c54d50-3507-013a-2f0b-6ad5f58f6a49/e/1e6d1790-c81c-013b-f8e2-56f5867ab34b/img/carver-logo-header.png" alt="logo"></a></div>
+        <div id="navmid">
+            <a href="surfscates.html">SURFSCATS</a>
+            <a href="extras.html">EXTRAS</a>
+            <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+            <a href="sale.html">SALE</a>
+        </div>
+        <div id="navlast">
+        <a href="login.html"><img width="32" height="32" src="user.svg" alt="user"></a>
+            <h3 style="color: azure;">SEARCH</h3>
+           <a href="wishlist.html">WHSHLIST</a>
+           <a href="cart.html">BAG</a>
+        </div>
+        <div id="Sml">
+            <a href="login.html"><img width="32" height="32" src="user.svg" alt="user"></a>
+            <a href="cart.html">BAG</a>  
+        </div>
+    </div>
+    <!--  -->
+</body>
+<script>
+    const openButton = document.querySelector('.open-button');
+    const closeButton = document.querySelector('.close-button');
+    const slideMenu = document.querySelector('.slide-menu');
+
+    openButton.addEventListener('click', () => {
+        slideMenu.style.left = '0';
+    });
+
+    closeButton.addEventListener('click', () => {
+        slideMenu.style.left = '-300px';
+    });
+    function hideButton() {
+        const openButton = document.querySelector('.open-button');
+        openButton.style.display = 'none';
+
+        const closeButton = document.querySelector('.close-button');
+        closeButton.addEventListener('click', showButton);
+    }
+
+    function showButton() {
+        const openButton = document.querySelector('.open-button');
+        openButton.style.display = 'block';
+    }
+</script>
+
+</html>

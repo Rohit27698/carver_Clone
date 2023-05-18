@@ -7,3 +7,4 @@ import navbar from "../components/navbar.js";
 import footer from "../components/footer.js";
 let footerdiv=document.getElementById("footer")
 footerdiv.innerHTML=footer();
+
