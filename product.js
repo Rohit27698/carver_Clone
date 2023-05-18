@@ -38,17 +38,25 @@ img.src = elem.image;
 let hr = document.createElement("hr")
 hr.style.border= "3px solid rgb(23, 22, 22);";
 
+let desdiv=document.createElement('div')
+desdiv.setAttribute('class', 'desdiv')
+
 let desc = document.createElement("p")
 desc.textContent = elem.description;
+desc.setAttribute('class', 'pd')
 
 let price = document.createElement("p")
-price.textContent = elem.price;
+price.textContent = "$ " +elem.price;
+price.setAttribute('class', 'price')
+
+
 
 let discount = document.createElement("p")
-discount.textContent = elem.discount;
+discount.textContent = elem.discount
+desdiv.append(price, discount)
 
 a.append(img , hr)
-div.append(a , desc , price , discount);
+div.append(a ,desc, desdiv);
 container.append(div);
 
 })
@@ -77,24 +85,23 @@ function sortPrice(){
 
 // SORT BY DISCOUNT 
 
-function sortDiscount(urls){
+// function sortDiscount(urls){
 
-    let sortDiscount = document.getElementById("SortbyDiscount").value;
-    console.log(sortDiscount);
+//     let sortDiscount = document.getElementById("SortbyDiscount").value;
+//     console.log(sortDiscount);
 
     // function sortDiscount(){
-    function filter1(){
-        let urlf1="http://localhost:3000/posts?discount_gte=0&discount_lte=20";
+     const filterVal= document.getElementById("SortbyDiscount");
+     filterVal.addEventListener("change",()=>{
+      let selectVal=filterVal.value;
+      let urlf1="http://localhost:3000/posts?discount="+selectVal+"&discount=100%off";
+      console.log("val",selectVal)
         getdata(urlf1);
-      }
-      function filter2(){
-        let urlf2="http://localhost:3000/posts?discount_gte=20&discount_lte=30";
-        getdata(urlf2);
-      }
-      function filter3(){
-        let urlf3="http://localhost:3000/posts?discount_gte=30&discount_lte=40";
-        getdata(urlf3);
-      }
+        console.log(urlf1);
+
+     })
+    
+
     // }  
     // sortDiscount()
 
@@ -113,7 +120,7 @@ function sortDiscount(urls){
 
 
 
-}
+// }
 
 
 let productdes=[]

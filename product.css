@@ -1,56 +1,108 @@
+*{
+    font-family: none;
+}
 #mainbox{
-    /* border: 3px solid crimson; */
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 #mainbox>h1{
-    text-align: left;
-    margin-left: 4.5rem;
+    width: 90%;
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    margin: auto;
 }
-#mainbox>#partone{
-    /* border: 3px solid green; */
+#mainbox>h3{
+    width: 90%;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight:500;
+    margin: auto;
+    margin-top: 30px;
+}
+#mainbox #partone{
     display: flex;
+    width: 90%;
+    margin: auto;
     justify-content: space-between;
+    margin-top: 80px;
 }
-#partone>select{
-    padding: 20px;
+#partone select{
+    padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 4.5rem;
-    margin-right: 4.5rem;
+    border-radius: 10px;
 }
 #container{
+    width: 90%;
     display: grid;
-    /* border: 5px solid yellow; */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
-    justify-content: center;
-}
-#container>div{
-    border: 3px solid rgb(88, 86, 86);
     margin: auto;
-    /* background-color: rgb(252, 252, 106); */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-#container>div>a>img{
+#container #detaildiv{
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#container #detaildiv:hover{
+    transform: scale(0.9);
+    background-color:yellow;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#detaildiv img{
     width: 100%;
     height: 50vh;
 }
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#detaildiv .pd{
+    width: 97%;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: -8px;
 }
-#detaildiv:hover{
-    transform: (1.05);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+#detaildiv .desdiv{
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#detaildiv .desdiv .price{
+    color: crimson;
+}
+
+/* 
+@media only screen and (max-width:620px){
+
+    #mainbox{
     
-h3{
-    margin-left: 4.5rem;
-    margin-right: 4.5rem;
-}
-.hr{
-    border : 3px  rgb(146, 142, 142);
-}
-/* #imgdiv{
-    border:3px solid black;
+        display: block;
+        flex-direction: column;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;   
+        margin-top: 20px;
+        margin-bottom: 25px;
+        height: auto;
+        
+    }
 } */
+
+
+    @media only screen and (max-width: 800px) { 
+    #container{ 
+        flex-direction: repeat(1,1fr); 
+    }
+}
+
+@media only screen and (max-width: 800px) { 
+    #seconddiv{ 
+        grid-template-columns: repeat(2,1fr); 
+    } 
+    } 
+    @media only screen and (max-width: 500px) { 
+    #seconddiv{ 
+        grid-template-columns: repeat(1,1fr); 
+    }
+}

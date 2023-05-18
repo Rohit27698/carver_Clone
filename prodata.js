@@ -9,7 +9,7 @@ document.getElementById("container").innerText = ""
 Descdata.map((elem)=>{
   var imgDiv = document.createElement("div")
   imgDiv.id = "imgdiv"
-  imgDiv.style.width = "60%";
+  
   // imgDiv.style.boxShadow = " rgba(0, 0, 0, 0.24) 0px 3px 8px"
 
   let img = document.createElement("img")
@@ -19,31 +19,28 @@ Descdata.map((elem)=>{
 
   
   let descriptionDiv = document.createElement("div")
-  descriptionDiv.style.width = "40%"
+  descriptionDiv.id='seconddiv'
   
   let description = document.createElement("p")
   description.textContent = elem.description;
   description.style.fontSize = "30px"
-  // description.style.font-weight = "200";
+  description.id = "descdiv"
+  // description.style.font-weight = "bold";
   
   let price = document.createElement("p")
-  price.textContent = "price:"+ elem.price;
+  price.textContent = "price: $"+ elem.price;
   price.style.fontSize = "23px"
+  price.id = "textPrice"
 
   let hr = document.createElement("hr")
   hr.style.border= "solid";
   
   let addbtn = document.createElement("button")
-  addbtn.textContent = "Add to bag";
+  addbtn.textContent = "Add to Bag";
   // addbtn.style.fontSize = "50px"
-  addbtn.setAttribute("id" , "addbtn");
+  addbtn.id = "addbtn";
 
-  addbtn.style.background = "yellow"
-  addbtn.style.width = "700px";
-  addbtn.style.height = "50px"
-  // addbtn.style.justifyContent= "center"
-  
-  // addbtn.setAttribute("id","cartbtn");
+ 
   addbtn.addEventListener("click",function(){
             addToCart(elem);
         })
