@@ -10,146 +10,192 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <style>
+        img{
+            width: 100%;
+        }
         body {
             margin: auto;
             background-color: #e6e6e6;
-            font-family: 'Noto Sans TC', sans-serif;
         }
 
         #mainImg {
             width: 100%;
             margin: auto;
-            font-size: 26.5vw;
+            text-align: center;
+            font-size: 26vw;
+            font-family: 'Noto Sans TC', sans-serif;
+            margin-bottom: -100px;
         }
 
         #mid {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            height: 80vh;
-            margin-top: -20vh;
-            margin-bottom: 20vh;
+            margin-bottom: 100px;
         }
-        #istimg{
-            height: 30vh;
-        }
-
-        #mid img {
-            height: 70vh;
-        }
-
         #midDiv {
-            margin-top: 20px;
             font-family: none;
-
-            text-align: center;
+            /* text-align: center; */
         }
-
-        #centertext {
-            font-size: 30px;
-        }
-
         #midDiv a {
             color: black;
+            margin-top: 20px;
         }
         #lost_collection{
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             flex-direction: column;
-            font-family: none;
-            
+            gap: 50px;
+            margin-top: 50px;
         }
         #lostLast{
             display: flex;
+            justify-content: space-around;
             flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 1%;
-
+            width: 100%;
+            margin-bottom: 50px;
         }
         #lostMid{
-            margin-left: 33%;
-            margin-top: -3%;
-            margin-bottom: 3%;
+            margin-left: -100px;
         }
-     #lost_firstImg{
-       margin-top: -10%;
-     }
-     #lost_firstImg img{
-        margin-top: -8%;
-       height: 80vh;
-       width: 72vh;
-     }
-     #lss1{
-        margin-left: -20%;
-     }
-     #lostMid button{
-        height: 45px;
-    background-color: yellow;
-    width: 300px;
-    border: none;
-     }
-     #lss1 img{
-        height: 76%;
-     }
-     #lss img{
-        height: 76%; 
-     }
-     @media screen and (max-width:1050px) {
-        #mid{
-            display: none;
+
+       
+
+        #midDiv {
+            display: flex;
+            flex-direction: column;
+            column-gap: -20px;
+            justify-content: center;
+            align-items: center;
+        }
+        #centertext{
+          font-size: 30px;
+          margin-bottom: -15px;
+        }
+
+        #top-products{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+            width: 100%;
+        }
+        #tdv1{
+            display: flex;
+            width: 45%;
+            gap: 5px;
+            justify-content: space-between;
+        }
+        #tdv2{
+            display: flex;
+            width: 55%;
+            justify-content: space-between;
+        }
+        #tdv2 div{
+            margin-left: 10px;
+        }
+
+
+
+        #about-carver{
+            display: flex;
+            justify-content: space-between;
+        }
+        img[src="about.png"]{
+            width: 35%;
+         height: 0%;
+        }
+        img[src="old.png"]{
+            width: 40%;
+            height: 40%;
+            margin-top: 36.5%;
+        }
+        #oldDiv{
+            display: flex;
+            justify-content: space-between;
+            width: 65%;
+        }
+        #follow{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 25px;
+            margin-top: 0px;
+        }
+        #f1d{
+            display: flex;
+        }
+        #fd2{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
 
         }
-     }
+        #midDiv {
+                position:sticky;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: auto;
+                text-align: center;
+            }
+        @media screen and (min-width: 888px){
+            #minDiv{
+                margin-top: 500px;
+            }
+        }
+        @media screen and (max-width: 912px) {
+            img[src="ts1.png"] {
+                display: none;
+            }
+
+            #mid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #midDiv {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: auto;
+                text-align: center;
+            }
+            #mainImg {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            font-size: 26vw;
+            font-family: 'Noto Sans TC', sans-serif;
+            margin-bottom:-25px;
+        }
+        }
+        button{
+            background-color: yellow;
+            width: 250px;
+            height: 40px;
+            border: none;
+        }
     </style>
-    <title>CARVER</title>
+    <title>carver</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div id="slide">
-            <div class="slide-menu">
-                <a href="#" class="close-button">×</a>
-                <a href="surfscates.html">SURFSCATS</a>
-                <a href="extras.html">EXTRAS</a>
-                <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
-                <a href="sale.html">SALE</a>
-                <a href="wishlist.html">WHSHLIST</a>
-            </div>
-            <button class="open-button" onclick="hideButton()"><img src="menu.png" alt=""></button>
-        </div>
-        <div id="navlogo">
-        <a href="index.htlm">
-        <img src="https://cdn11.bigcommerce.com/s-icfw6t6sn3/stencil/91c54d50-3507-013a-2f0b-6ad5f58f6a49/e/1e6d1790-c81c-013b-f8e2-56f5867ab34b/img/carver-logo-header.png" alt="logo"></a></div>
-        <div id="navmid">
-            <a href="surfscates.html">SURFSCATS</a>
-            <a href="extras.html">EXTRAS</a>
-            <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
-            <a href="sale.html">SALE</a>
-        </div>
-        <div id="navlast">
-        <a href="login.html" id="userlogo"><img width="32" height="32" src="user.svg" alt="user" ></a>
-            <h3 style="color: azure;">SEARCH</h3>
-           <a href="wishlist.html">WHSHLIST</a>
-           <a href="cart.html">BAG</a>
-        </div>
-        <div id="Sml">
-            <a href="login.html"><img width="32" height="32" src="user.svg" alt="user"></a>
-            <a href="cart.html">BAG</a>  
-        </div>
-    </div>
+    <div id="navbar_div"></div>
     <h1 id="mainImg">CARVER</h1>
     <div id="mid">
-        <img id="istimg" src="pic1.jpg" alt="">
+        <img style="width: 300px;" src="ts1.png" alt="">
         <div id="midDiv">
-            <p>Make <i> waves</i></p>
+            <p style="margin-bottom: -15px;">Make <i> waves</i></p>
             <p id="centertext">NEW COLLECTION</p>
             <p id="centertext">SUMMER</p>
-            <p id="centertext"><i>twenty</i> 23</p>
+            <p id="centertext"><i>twenty</i> 22</p>
             <p id="centertext">CURATED BY</p>
             <p id="centertext"><i>CARVER</i></p>
             <a href="product.html">GO SHOPPING</a>
         </div>
-        <img src="pic2.jpg" alt="">
+        <img style="width: 300px;" src="ts2.png" alt="">
     </div>
     <div id="lost_collection">
         <div id="lostMid">
@@ -173,105 +219,89 @@
                     JUMPER SURFSKATE COMPLETE C7</p>
                 <p> $ 272.00 </p>
             </div>
-            <div id="lss">
+            <div id="lss" style="background-color: yellow;" >
                 <img src="losts3.jpg" alt="">
-                <p>LOST X CARVER 3ø.5" PUDDLE <br>
+                <p >LOST X CARVER 3ø.5" PUDDLE <br>
                     JUMPER SURFSKATE COMPLETE C7</p>
                 <p> $ 272.00 </p>
             </div>
         </div>
 
-    </div> 
-
-
-
-
-
+    </div>
     <!-- videos section -->
-
-    <video width="100%" controls="controls">
+    <video width="100%" controls="controls" poster="videoposter.jpg">
         <source src="video.mp4" type="video/mp4">
     </video>
-
-
-
-    <!--top-products -->
-
-
-    <div id="top-products">
-        <div><img src="top1.jpg" alt="top1"><p>CARVER 3ø.25" FIREFLY <br>
-            SURF-SKATE 2022 COMPLETE CX</p><p>$250.00</p></div>
-        <div><img src="top2.jpg" alt="top2"><p>31" J.O.B BLUE TIGER <br>
-            SURFSKATE 2022 COMPLETE CX</p><p>$270.00</p></div>
-        <div>  <p><i>TOP</i>_ PRODUCTS</p><p>Carver has always been about surfing, <br>
-            and of capturing that joyous feeling <br>
-            of flow on a skateboard.</p><button>Go shopping</button></div>
-        <div><img src="top3.jpg" alt="top3"><p>33.5" J.O.B CAMO TIGER <br>
-            SURFSKATE 2022 COMPLETE C7</p><p>$285.00</p></div>
-    </div>
-
-
-    <!-- about-carver -->
-    <div>
-        <img src="about.png" alt="">
-        <div>
-            <p>ABOUT <i> CARVER</i></p>
-            <p>It all started one quiet summer in <br>
-                Venice, California in 1995. Greg Falk <br>
-                and Neil Carver had been surfing all <br>
-                winter, and were pumped to surf <br>
-                the warmer waters of the <br>
-                Breakwater during the long days of <br>
-                summer, but it was as flat as a <br>
-                puddle. Not even a longboard ripple <br>
-                to justify getting wet.</p>
+   <!--top-products -->
+ <div id="top-products">
+        <div id="tdv1">
+            <div><img src="top1.jpg" alt="top1">
+                <p>CARVER 3ø.25" FIREFLY <br>
+                    SURF-SKATE 2022 COMPLETE CX</p>
+                <p>$250.00</p>
+            </div>
+            <div><img src="top2.jpg" alt="top2">
+                <p>31" J.O.B BLUE TIGER <br>
+                    SURFSKATE 2022 COMPLETE CX</p>
+                <p>$270.00</p>
+            </div>
         </div>
-        <div><img src="old.png" alt=""></div>
+        <div id="tdv2">
+            <div>
+                <p id="centertext"><i>TOP</i>_ PRODUCTS</p>
+                <p>Carver has always been about surfing, <br>
+                    and of capturing that joyous feeling <br>
+                    of flow on a skateboard.</p><button>Go shopping</button>
+            </div>
+            <div style="margin-left: 10%;"><img style="width: 98%;" src="top3.jpg" alt="top3">
+                <p>33.5" J.O.B CAMO TIGER <br>
+                    SURFSKATE 2022 COMPLETE C7</p>
+                <p>$285.00</p>
+            </div>
+        </div>
     </div>
-
-
-    <!-- follow insta -->
-    <div>
-        <p>FOLLOW US <br>
-            IN INSTAGRAM</p>
-       <div>
-        <img src="follow1.png" alt="">
-       </div>
-       <div><p>Carver is not just surfskates, it's a <br>
-        way of life. Check it out by looking at  <br>
-        the photos of our friends on  <br>
-        Instagram. And we are waiting for you <br>
-        in our community.</p> 
-        <img src="follow2.png" alt=""></div>
-       <img src="follow3.png" alt="">
+ <!-- about-carver -->
+    <div id="about-carver">
+        <img src="about.png" alt="">
+        <div id="oldDiv">
+            <div>
+                <p id="centertext">ABOUT <i> CARVER</i></p>
+                <p>It all started one quiet summer in <br>
+                    Venice, California in 1995. Greg Falk <br>
+                    and Neil Carver had been surfing all <br>
+                    winter, and were pumped to surf <br>
+                    the warmer waters of the <br>
+                    Breakwater during the long days of <br>
+                    summer, but it was as flat as a <br>
+                    puddle. Not even a longboard ripple <br>
+                    to justify getting wet.</p>
+            </div>
+            <img src="old.png" alt="">
+        </div>
     </div>
-
-    <div id="footer"></div>
+  <!-- follow insta -->
+    <div id="follow">
+        <p id="centertext">FOLLOW US <br>
+            <i>IN INSTAGRAM</i></p>
+        <div id="f1d">
+            <div>
+                <img style="width: 40% ; margin-left: -50%; margin-top: 47%;" src="follow1.png" alt="">
+            </div>
+           <div id="fd2">
+            <div style="margin-top: 25px;">
+                <p style="margin-bottom: 40px;">Carver is not just surfskates, it's a <br>
+                    way of life. Check it out by looking at <br>
+                    the photos of our friends on <br>
+                    Instagram. And we are waiting for you <br>
+                    in our community.</p>
+                <img style="width: 100%; height: 52%;" src="follow2.png" alt="">
+            </div>
+            <img style="width: 100%; height: 76.7%;" src="follow3.png" alt="">
+           </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
 </body>
-<script>
-    const openButton = document.querySelector('.open-button');
-    const closeButton = document.querySelector('.close-button');
-    const slideMenu = document.querySelector('.slide-menu');
-
-    openButton.addEventListener('click', () => {
-        slideMenu.style.left = '0';
-    });
-
-    closeButton.addEventListener('click', () => {
-        slideMenu.style.left = '-300px';
-    });
-    function hideButton() {
-        const openButton = document.querySelector('.open-button');
-        openButton.style.display = 'none';
-
-        const closeButton = document.querySelector('.close-button');
-        closeButton.addEventListener('click', showButton);
-    }
-
-    function showButton() {
-        const openButton = document.querySelector('.open-button');
-        openButton.style.display = 'block';
-    }
-</script>
 <script type="module" src="index.js"></script>
 </html>
