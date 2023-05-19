@@ -1,4 +1,6 @@
-
+*{
+    font-family: none;
+}
 #parent{
     
     display: flex;

@@ -1,3 +1,15 @@
+// import navbar from "./navbar.js";
+
+//     let navbarDiv = document.getElementById("navbar_div");
+//     navbarDiv.innerHTML = navbar();
+
+
+// import footer from ".footer.js";
+// let footerdiv=document.getElementById("footer")
+// footerdiv.innerHTML=footer();
+
+
+
 let url = `http://localhost:3000/posts`;
 
 async function getdata(url){
@@ -121,6 +133,102 @@ function sortPrice(){
 
 
 // }
+// PAGINATION 
+let page = 1;
+let data = [];
+
+const pegidata= async(page =1 , limit =9)=>{
+try{
+  let url = `http://localhost:3000/posts?_page=${page}&_limit=${limit}`;
+
+   data = await fetch(url);
+  data = await data.json();
+
+  display(data);
+
+}catch(err){
+  console.log("err");
+}
+
+}
+
+document.getElementById("prev").addEventListener("click" , prevfun)
+
+function prevfun(){
+
+
+  
+  if (page ===1){
+    alert("Page 1 .....!")
+    return;
+  }
+  let pageNo = document.getElementById("pageNo");   
+  pageNo.innerText = "";
+  page-=1;
+  pageNo.innerText = page;
+  pegidata(page , 9)
+}
+
+document.getElementById("next").addEventListener("click" , nextfun)
+
+function nextfun(){
+
+
+  if (page === data.length){
+    alert("Last Page ....!")
+    return;
+  }
+
+  let pageNo = document.getElementById("pageNo");
+  pageNo.innerText = "";
+page +=1
+pageNo.innerText = page;
+pegidata(page , 9)
+
+}
+
+
+pegidata()
+
+
+
+// DEBOUNCING
+
+let timerId;
+
+const searchdata = async () => {
+  try {
+    let searchInput = document.querySelector("search-input").value;
+    let res = await fetch(`http://localhost:3000/posts&s=${searchInput}`);
+    let data = await res.json();
+    return data.Search;
+  } catch (err) {
+    console.log(err);
+  }
+}
+display(data)
+
+  const main = async () => {
+    let datalist = await searchdata();
+    if (datalist === undefined) {
+      return false;
+    }
+    displayData(datalist);
+  }
+  
+  const Debounce = (func, delay) => {
+    if (timerId) {
+      clearTimeout(timerId);
+    }
+  
+    timerId = setTimeout(() => {
+      func();
+    }, delay);
+  }
+
+
+
+// debouncing ends 
 
 
 let productdes=[]

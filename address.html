@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Address.css">
     
 </head>
+<body>
+    <div id="navbar_div"></div>
     <div id="parent">
         <div id="text_content">
             <h1>Choose Address</h1>
@@ -49,8 +51,26 @@
        
 
     </div>
+    <div id="footer">
+    </div>
 </body>
+<script type="module" src="index.js"></script>
 <script>
+
+
+
+// import navbar from "../components/navbar.js";
+
+//     let navbarDiv = document.getElementById("navbar_div");
+//     navbarDiv.innerHTML = navbar();
+
+
+// import footer from "../components/footer.js";
+// let footerdiv=document.getElementById("footer")
+// footerdiv.innerHTML=footer();
+
+
+
     document.querySelector("#Add_Address").addEventListener("click" , Dis_form);
 
    
@@ -165,6 +185,9 @@
 
    
     var DisplayForm = JSON.parse(localStorage.getItem("Address-data")) || [];
+
+
+    
          DisplayForm.map(function(elem){
 
             var Disname = document.createElement("h4");

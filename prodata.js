@@ -1,3 +1,17 @@
+// import navbar from "./navbar.js";
+
+//     let navbarDiv = document.getElementById("navbar_div");
+//     navbarDiv.innerHTML = navbar();
+
+
+// import footer from ".footer.js";
+// let footerdiv=document.getElementById("footer")
+// footerdiv.innerHTML=footer();
+
+
+
+
+
 var Descdata = JSON.parse(localStorage.getItem('productDetail'))|| [];
 
 display(Descdata) 

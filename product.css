@@ -90,6 +90,60 @@
 } */
 
 
+  
+#pagi {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #prev,
+  #next {
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  #pageNo {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    
+  }
+
+  #prev {
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+
+  }
+  #next {
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+
+  }
+  
+
+  #prev:hover {
+    transform: scale(0.9);
+    /* background-color:yellow; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+
+  #next:hover {
+    transform: scale(0.9);
+    /* background-color:yellow; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+  }
+
+
     @media only screen and (max-width: 800px) { 
     #container{ 
         flex-direction: repeat(1,1fr); 
