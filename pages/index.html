@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <title>CARVER</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="slide">
+          <div class="slide-menu">
+              <a href="#" class="close-button"> <img style="height: 3vh;" src="../images/menu.png" alt=""></a>
+              <input type="text" oninput="Debounce(main,1000)" placeholder="Search..." style="background-color: rgb(89, 89, 89) ;width: 97% ;height: 40px;">
+              <a href="surfscates.html">SURFSCATS</a>
+              
+              <a href="extras.html">EXTRAS</a>
+              <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+              <a href="sale.html">SALE</a>
+              <a href="wishlist.html">WHSHLIST</a>
+          </div>
+          <button class="open-button" onclick="hideButton()"><img src="../images/menu.png" alt=""></button>
+      </div>
+      <div id="navlogo">
+          <a href="index.html">
+              <img src="https://cdn11.bigcommerce.com/s-icfw6t6sn3/stencil/91c54d50-3507-013a-2f0b-6ad5f58f6a49/e/1e6d1790-c81c-013b-f8e2-56f5867ab34b/img/carver-logo-header.png"
+                  alt="logo"></a>
+      </div>
+      <div id="navmid">
+          <a href="surfscates.html">SURFSCATS</a>
+          <a href="extras.html">EXTRAS</a>
+          <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+          <a href="sale.html">SALE</a>
+      </div>
+      <div id="navlast">
+          <a href="login.html"><img id="useri" width="32" height="32" src="../images/user.svg" alt="user"></a>
+          <div class="search-dropdown">
+              <button class="search-button" onclick="toggleSearchInput()">SEARCH</button>
+              <input type="text" class="search-input" oninput="Debounce(main,1000)" placeholder="Search..." />
+          </div>
+          <a href="cart.html">BAG</a>
+      </div>
+      <div id="Sml">
+          <a href="login.html"><img width="32" height="32" src="../images/user.svg" alt="user"></a>
+          <a href="cart.html">BAG</a>
+      </div>
+  </div>
+    <h1 id="mainImg">CARVER</h1>
+    <div id="mid">
+      <img style="width: 300px;" src="../images/ts1.png" alt="">
+      <div id="midDiv">
+        <p style="margin-bottom: -15px;">Make <i> waves</i>
+        </p>
+        <p id="centertext">NEW COLLECTION</p>
+        <p id="centertext">SUMMER</p>
+        <p id="centertext">
+          <i>twenty</i> 22
+        </p>
+        <p id="centertext">CURATED BY</p>
+        <p id="centertext">
+          <i>CARVER</i>
+        </p>
+        <a href="product.html">GO SHOPPING</a>
+      </div>
+      <img style="width: 300px;" src="../images/ts2.png" alt="">
+    </div>
+    <div id="lost_collection">
+      <div id="lostMid">
+        <p style="font-size:30px; margin-bottom: -15px;">
+          <i>LOST </i> COLLECTION
+        </p>
+        <P>Matt 'Mayhem' Biolos of Lost <br> Surfboards is clearly one of the <br> most cutting edge board designers <br> in surfing today. </P>
+        <button id="button"> Go shopping</button>
+      </div>
+      <div id="lostLast">
+        <div id="lost_firstImg">
+          <img src="../images/losts.jpg" alt="">
+          <p> LOST X CARVER 29 RNF RETRO <br> SURFSKATE COMPLETE C7 </p>
+          <p> $ 272.00 </p>
+        </div>
+        <div id="lss1">
+          <img src="../images/losts2.jpg" alt="">
+          <p>LOST X CARVER 3ø.5" PUDDLE <br> JUMPER SURFSKATE COMPLETE C7 </p>
+          <p> $ 272.00 </p>
+        </div>
+        <div id="lss" style="background-color: yellow;">
+          <img src="../images/losts3.jpg" alt="">
+          <p>LOST X CARVER 3ø.5" PUDDLE <br> JUMPER SURFSKATE COMPLETE C7 </p>
+          <p> $ 272.00 </p>
+        </div>
+      </div>
+    </div>
+    <!-- videos section -->
+    <video width="100%" controls="controls" poster="../images/videoposter.jpg">
+      <source src="../images/video.mp4" type="video/mp4">
+    </video>
+    <!--top-products -->
+    <div id="top-products">
+      <div id="td1">
+        <img src="../images/top1.jpg" alt="top1">
+        <p>CARVER 3ø.25" FIREFLY <br> SURF-SKATE 2022 COMPLETE CX </p>
+        <p>$250.00</p>
+      </div>
+      <div id="td1">
+        <img src="../images/top2.jpg" alt="top2">
+        <p>31" J.O.B BLUE TIGER <br> SURFSKATE 2022 COMPLETE CX </p>
+        <p>$270.00</p>
+      </div>
+      <div>
+        <p id="centertext" style="margin-bottom: 20px;">
+          <i>TOP</i>_ PRODUCTS
+        </p>
+        <p>Carver has always been about surfing, <br> and of capturing that joyous feeling <br> of flow on a skateboard. </p>
+        <button id="button">Go shopping</button>
+      </div>
+      <div>
+        <img src="../images/top3.jpg" alt="top3">
+        <p>33.5" J.O.B CAMO TIGER <br> SURFSKATE 2022 COMPLETE C7 </p>
+        <p>$285.00</p>
+      </div>
+      <div id="td2">
+        <img src="../images/top1.jpg" alt="top1">
+        <p>CARVER 3ø.25" FIREFLY <br> SURF-SKATE 2022 COMPLETE CX </p>
+        <p>$250.00</p>
+      </div>
+      <div id="td2">
+        <img src="../images/top2.jpg" alt="top2">
+        <p>31" J.O.B BLUE TIGER <br> SURFSKATE 2022 COMPLETE CX </p>
+        <p>$270.00</p>
+      </div>
+    </div>
+    <!-- follow insta -->
+    <div id="follow2">
+      <p id="centertext">FOLLOW US <br>
+        <i>IN INSTAGRAM</i>
+      </p>
+      <p style="margin-bottom: 40px;">Carver is not just surfskates, it's a <br> way of life. Check it out by looking at <br> the photos of our friends on <br> Instagram. And we are waiting for you <br> in our community. </p>
+      <div style="display: flex; width: 100%; justify-content: space-around;">
+        <img src="../images/follow2.png" alt="">
+      </div>
+    </div>
+    <div id="follow">
+      <p id="centertext">FOLLOW US <br>
+        <i>IN INSTAGRAM</i>
+      </p>
+      <div id="f1d">
+        <div id="f1i">
+          <img style="width: 40% ; margin-left: -50%; margin-top: 47%;" src="../images/follow1.png" alt="">
+        </div>
+        <div id="fd2">
+          <div style="margin-top: 25px;" id="fd3">
+            <p style="margin-bottom: 40px;">Carver is not just surfskates, it's a <br> way of life. Check it out by looking at <br> the photos of our friends on <br> Instagram. And we are waiting for you <br> in our community. </p>
+            <img style="width: 100%; " src="../images/follow2.png" alt="">
+          </div>
+          <img style="width: 100%; height: 76.7%;" src="../images/follow3.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- about-carver -->
+    <div id="about-carver">
+      <img src="../images/about.png" alt="">
+      <div id="oldDiv">
+        <div>
+          <p id="centertext">ABOUT <i> CARVER</i>
+          </p>
+          <p>It all started one quiet summer in <br> Venice, California in 1995. Greg Falk <br> and Neil Carver had been surfing all <br> winter, and were pumped to surf <br> the warmer waters of the <br> Breakwater during the long days of <br> summer, but it was as flat as a <br> puddle. Not even a longboard ripple <br> to justify getting wet. </p>
+        </div>
+        <img src="../images/old.png" alt="">
+      </div>
+    </div>
+    <div id="oldDivs">
+      <div>
+        <p id="centertext">ABOUT <i> CARVER</i>
+        </p>
+        <p>It all started one quiet summer in <br> Venice, California in 1995. Greg Falk <br> and Neil Carver had been surfing all <br> winter, and were pumped to surf <br> the warmer waters of the <br> Breakwater during the long days of <br> summer, but it was as flat as a <br> puddle. Not even a longboard ripple <br> to justify getting wet. </p>
+      </div>
+      <img src="../images/about.png" alt="">
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script type="module" src="index.js"></script>
+  <script>
+     const openButton = document.querySelector('.open-button');
+    const closeButton = document.querySelector('.close-button');
+    const slideMenu = document.querySelector('.slide-menu');
+
+    openButton.addEventListener('click', () => {
+        slideMenu.style.left = '0';
+    });
+
+    closeButton.addEventListener('click', () => {
+        slideMenu.style.left = '-300px';
+    });
+
+    function hideButton() {
+        const openButton = document.querySelector('.open-button');
+        openButton.style.display = 'none';
+
+        const closeButton = document.querySelector('.close-button');
+        closeButton.addEventListener('click', showButton);
+    }
+
+    function showButton() {
+        const openButton = document.querySelector('.open-button');
+        openButton.style.display = 'block';
+    }
+
+    function toggleSearchInput() {
+        const searchInput = document.querySelector('.search-input');
+        searchInput.classList.toggle('active');
+        searchInput.focus();
+    }
+</script>
+  </script>
+</html>

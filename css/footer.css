@@ -1,0 +1,84 @@
+
+/*  footer css */
+#footer{
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+#subscribediv {
+    margin: auto;
+    margin-left: 2%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#info{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-right: 3%;
+    width: 50%;
+
+}
+#info div{
+    display: flex;
+    flex-direction: column;
+}
+#subscribediv input{
+     padding-left: 20px;
+    align-items: center;
+    height: 44px;
+}
+#subscribediv button{
+    height: 45px;
+    background-color: yellow;
+    border-radius: none;
+}
+#subscribediv label{
+    color: white
+}
+#info div h3{
+    color: white;
+}
+#info div p{
+    color: white;
+    margin-top: 1px;
+}
+#FOLLOW a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#FOLLOW a:hover{
+    color: rgb(0, 222, 238);
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px){
+    #footer{
+        background-color: #353535;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        
+    }
+    #subscribediv {
+        margin-left: 5%;
+        width: 90%;
+   text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 3%;
+    width: 50%;
+
+}
+}

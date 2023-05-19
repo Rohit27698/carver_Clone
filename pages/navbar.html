@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="slide">
+            <div class="slide-menu">
+                <a href="#" class="close-button"> <img style="height: 3vh;" src="../images/menu.png" alt=""></a>
+                <input type="text" oninput="Debounce(main,1000)" placeholder="Search..." style="background-color: rgb(89, 89, 89) ;width: 97% ;height: 40px;">
+                <a href="surfscates.html">SURFSCATS</a>
+                
+                <a href="extras.html">EXTRAS</a>
+                <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+                <a href="sale.html">SALE</a>
+                <a href="wishlist.html">WHSHLIST</a>
+            </div>
+            <button class="open-button" onclick="hideButton()"><img src="../images/menu.png" alt=""></button>
+        </div>
+        <div id="navlogo">
+            <a href="index.html">
+                <img src="https://cdn11.bigcommerce.com/s-icfw6t6sn3/stencil/91c54d50-3507-013a-2f0b-6ad5f58f6a49/e/1e6d1790-c81c-013b-f8e2-56f5867ab34b/img/carver-logo-header.png"
+                    alt="logo"></a>
+        </div>
+        <div id="navmid">
+            <a href="surfscates.html">SURFSCATS</a>
+            <a href="extras.html">EXTRAS</a>
+            <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+            <a href="sale.html">SALE</a>
+        </div>
+        <div id="navlast">
+            <a href="login.html"><img id="useri" width="32" height="32" src="../images/user.svg" alt="user"></a>
+            <div class="search-dropdown">
+                <button class="search-button" onclick="toggleSearchInput()">SEARCH</button>
+                <input type="text" class="search-input" oninput="Debounce(main,1000)" placeholder="Search..." />
+            </div>
+            <a href="cart.html">BAG</a>
+        </div>
+        <div id="Sml">
+            <a href="login.html"><img width="32" height="32" src="../images/user.svg" alt="user"></a>
+            <a href="cart.html">BAG</a>
+        </div>
+    </div>
+</body>
+<script>
+    const openButton = document.querySelector('.open-button');
+    const closeButton = document.querySelector('.close-button');
+    const slideMenu = document.querySelector('.slide-menu');
+
+    openButton.addEventListener('click', () => {
+        slideMenu.style.left = '0';
+    });
+
+    closeButton.addEventListener('click', () => {
+        slideMenu.style.left = '-300px';
+    });
+
+    function hideButton() {
+        const openButton = document.querySelector('.open-button');
+        openButton.style.display = 'none';
+
+        const closeButton = document.querySelector('.close-button');
+        closeButton.addEventListener('click', showButton);
+    }
+
+    function showButton() {
+        const openButton = document.querySelector('.open-button');
+        openButton.style.display = 'block';
+    }
+
+    function toggleSearchInput() {
+        const searchInput = document.querySelector('.search-input');
+        searchInput.classList.toggle('active');
+        searchInput.focus();
+    }
+</script>
+
+
+</html>
