@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./carver_Clone/css/navbar.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div id="slide">
+            <div class="slide-menu">
+                <a href="#" class="close-button"> <img style="height: 3vh;" src="../images/menu.png" alt=""></a>
+                <input type="text" oninput="Debounce(main,1000)" placeholder="Search..." style="background-color: rgb(89, 89, 89) ;width: 97% ;height: 40px;">
+                <a href="surfscates.html">SURFSCATS</a>
+                
+                <a href="extras.html">EXTRAS</a>
+                <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+                <a href="sale.html">SALE</a>
+                <a href="wishlist.html">WHSHLIST</a>
+            </div>
+            <button class="open-button" onclick="hideButton()"><img src="../images/menu.png" alt=""></button>
+        </div>
+        <div id="navlogo">
+            <a href="index.html">
+                <img src="https://cdn11.bigcommerce.com/s-icfw6t6sn3/stencil/91c54d50-3507-013a-2f0b-6ad5f58f6a49/e/1e6d1790-c81c-013b-f8e2-56f5867ab34b/img/carver-logo-header.png"
+                    alt="logo"></a>
+        </div>
+        <div id="navmid">
+            <a href="surfscates.html">SURFSCATS</a>
+            <a href="extras.html">EXTRAS</a>
+            <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+            <a href="sale.html">SALE</a>
+        </div>
+        <div id="navlast">
+            <a href="login.html"><img id="useri" width="32" height="32" src="./carver_Clone/images/user.svg" alt="user"></a>
+            <div class="search-dropdown">
+                <button class="search-button" onclick="toggleSearchInput()">SEARCH</button>
+                <input type="text" class="search-input" oninput="Debounce(main,1000)" placeholder="Search..." />
+            </div>
+            <a href="cart.html">BAG</a>
+        </div>
+        <div id="Sml">
+            <a href="login.html"><img width="32" height="32" src="../images/user.svg" alt="user"></a>
+            <a href="cart.html">BAG</a>
+        </div>
+    </div>
+    
+    
+
+    
+    <!--  NAVABR HTML ENDS -->
+    <div id="mainbox">
+        <div id = "backcolor">
+        <h1>ALL SURFSKATES</h1>
+        <h3>
+            Carver has always been about surfing, and of capturing that joyous feeling of flow on a skateboard. The original since 1996, Carver has led the modern surfskate movement forward with its innovative truck systems, like the dual-axis C7 for a smooth and flowing ride, the reverse-kingpin CX for a quick and snappy ride, or the lower, lighter C5 for tricks and parks. And with a variety of surf-inspired shapes and concaves, along with our fast and grippy Roundhouse wheels, Carver delivers speed, power and flow so you can truly ‘Surf your Skate’.</h3>
+        <div id="partone">
+<!-- SORT BY PRICE  -->
+        <select name="" id="sorting" onchange="sortPrice()" >
+            <option value=""  >Select for Sorting</option>
+            <option value="lth" >Price -- Low to High</option>
+            <option value="htl" >Price -- High to low</option>
+        </select>
+
+
+<!-- SORT BY DISCOUNT-->
+<select name="" id="SortbyDiscount">
+    <option value="">DISCOUNT</option>
+    <option value="10%off" >10% Discount</option>
+    <option value="20%off" >20% Discount</option>
+    <option value="30%off">30% Discount</option>
+</select>
+
+</div>
+
+
+</div>
+<br>,
+        
+        <div id = "container"></div>
+
+</div>
+
+<div id = "pagi">
+    <button id = "prev"> PREVIOUS </button>
+    <h3 id = pageNo>1</h3>
+    <button id = "next"> NEXT </button>
+
+</div>
+</div>
+
+<div id="footer">
+</div>
+</body>
+
+<script type="module" src="footer1.js"></script>
+</html>
+<script src = "./product.js"></script>
+
+
+<!-- NAVBAR SCRIPT -->
+<script>
+    const openButton = document.querySelector('.open-button');
+    const closeButton = document.querySelector('.close-button');
+    const slideMenu = document.querySelector('.slide-menu');
+
+    openButton.addEventListener('click', () => {
+        slideMenu.style.left = '0';
+    });
+
+    closeButton.addEventListener('click', () => {
+        slideMenu.style.left = '-300px';
+    });
+
+    function hideButton() {
+        const openButton = document.querySelector('.open-button');
+        openButton.style.display = 'none';
+
+        const closeButton = document.querySelector('.close-button');
+        closeButton.addEventListener('click', showButton);
+    }
+
+    function showButton() {
+        const openButton = document.querySelector('.open-button');
+        openButton.style.display = 'block';
+    }
+
+    function toggleSearchInput() {
+        const searchInput = document.querySelector('.search-input');
+        searchInput.classList.toggle('active');
+        searchInput.focus();
+    }
+</script>
+
