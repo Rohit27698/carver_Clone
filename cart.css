@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    font-size: 16px;
+}
+
+#per {
+    font-size: 15px;
+    color: rgb(0 19 37 / 64%);
+    font-weight: normal;
+}
+
+.parent h2 {
+    margin-top: 12px;
+    font-weight: 500px;
+}
+
+.parent img {
+    display: block;
+    margin: 10px 10px 10px 20px;
+}
+
+#parent {
+    display: flex;
+    justify-content: center;
+}
+
+.sp {
+    display: flex;
+    gap: 15px;
+}
+
+#child {
+    text-align: center;
+
+
+}
+
+#child>h2 {
+    font-size: 50px;
+    color: rgb(51, 63, 72);
+}
+
+#child .ps {
+    font-size: 20px;
+    border: none;
+    background-color: rgb(51, 63, 72);
+    color: aliceblue;
+    width: 400px;
+    height: 60px;
+}
+
+#psb {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+#fash {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#fash>div {
+    display: flex;
+    gap: 20px;
+}
+
+#email {
+    width: 400px;
+    height: 30px;
+}
+
+.k {
+    margin-left: 90px;
+}
+
+#fash>img {
+    width: 500px;
+}
+
+#cartprod {
+    width: 80%;
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    justify-content: center;
+    box-shadow: rgba(236, 134, 178, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: 5pxs solid red;
+
+}
+
+#cartprod>img {
+    width: 160px;
+    height: 180px;
+}
+
+
+
+#rsk {
+    margin-left: -160px;
+}
+
+#cardval>p {
+    font-size: 40px;
+    font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
+
+}
+
+#cartval>p>span {
+    font-size: 40px;
+}
+
+#btn {
+    background-color: rgb(245, 80, 116);
+    color: black;
+    border: none;
+
+    font-size: 25px;
+}
+
+#delbtn {
+
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 20px;
+    height: 10px;
+}
+
+#cardval>p {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    width: 50px;
+}
+
+#Offer {
+    width: 100%;
+    height: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#Offer>div>p>img {
+    width: 30px;
+    height: 25px;
+}
+
+#promo {
+    padding: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#Offer>div>p {
+    font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
+    color: rgb(40, 37, 37);
+    font-size: 20px;
+    text-align: center;
+}
+
+#Offer>div>button {
+    background-color: rgb(24, 20, 21);
+    color: rgb(252, 251, 251);
+    font-family: sans-serif;
+    padding: 10px;
+    border: 1px solid rgb(26, 22, 23);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#button {
+    display: block;
+    margin: auto;
+    color: whitesmoke;
+    background-color: rgb(234, 24, 70);
+    border: none;
+    width: 180px;
+    height: 60px;
+    /* font-family: sans-serif; */
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 30px;
+
+}
+
+#cardval {
+    display: flex;
+
+    justify-content: space-around;
+    margin-top: -10%;
+}
+
+#cardval p {
+    margin-top: 15px;
+}
+
+#trp {
+    display: flex;
+    justify-content: center;
+
+}
+
+#trp>p {
+    color: rgb(18, 16, 16);
+}
+
+#cardval>div>a {
+    text-decoration: none;
+}
+
+.nykkacart {
+    display: none;
+}
+
+.parent>button {
+    border: none;
+    background-color: white;
+    /* margin: 10px 30px 10px 0px; */
+
+}
+
+.nykaaoverlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.nykaacartdiv {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 100;
+    width: 550px;
+    border: 2px solid rgb(183 183 183);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px 6px;
+}
+.nykaacartinnerdiv {
+    display: none;
+    background-color: white;
+    height: 100vh;
+}
+.emptycartimage {
+    width: 200px;
+    margin-top: 50px;
+}
+#grandTotalParent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#gandTotal {
+    padding: 10px;
+    background-color: white;
+}
+#bagItems {
+    max-height: 85vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#original{
+    display: flex;
+    justify-content: space-between;
+    margin :20px 0px;
+}
+#original:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#imageDiv{
+    width: 200px;
+    height: 165px;
+    background-color: rgb(100, 96, 96);
+}
+#imageDiv #image{
+    width: 100%;
+    height: 100%;
+}
+#imageDiv>img:hover
+    {
+        transform: scale(1.1);
+    }
+
+#totalprice{
+    display: flex;
+    justify-content: space-between;
+
+}
+#checkout{
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    background-color: rgb(252, 252, 132);
+    border: rgb(128, 128, 17);
+    border-radius: 5px;
+}
+#checkoutBtn{
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+#Text{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    gap:40px;
+}
+#btnDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top:40px;
+}
+#discountDiv{
+    margin: 10px;
+    margin-top: 20px;
+    color: gray;
+}
+#priceDiv{
+    color: gray;
+}
+#delete button{
+    border: none;
+    color: rgb(88, 85, 85);
+    background-color: none;
+    text-decoration: underline;
+}
+#nameDiv{
+    color: rgb(52, 47, 47);
+}
+#delete button:hover{
+    cursor: pointer;
+}
+#checkoutBtn button:hover{
+    cursor: pointer;
+}
+#quantity:hover{
+    cursor: pointer;
+}
