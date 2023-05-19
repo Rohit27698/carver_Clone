@@ -73,13 +73,15 @@
           margin-bottom: -15px;
         }
 
-        #top-products{
+         #top-products{
             display: flex;
             justify-content: space-between;
-            padding-top: 100px;
+            flex-wrap: wrap;
             width: 100%;
+            margin-top: 20px;
+            margin-bottom: 50px;
         }
-        #tdv1{
+        /* #tdv1{
             display: flex;
             width: 45%;
             gap: 5px;
@@ -92,7 +94,7 @@
         }
         #tdv2 div{
             margin-left: 10px;
-        }
+        } */
 
 
 
@@ -118,7 +120,6 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            gap: 25px;
             margin-top: 0px;
         }
         #f1d{
@@ -142,6 +143,9 @@
         @media screen and (min-width: 888px){
             #minDiv{
                 margin-top: 500px;
+            }
+            #follow2{
+                display: none;
             }
         }
         @media screen and (max-width: 912px) {
@@ -176,6 +180,41 @@
             width: 250px;
             height: 40px;
             border: none;
+        }
+        @media screen and (max-width: 700px){
+            #about-carver,#follow{
+            display: none;
+        }
+        #oldDivs,#follow2{
+            text-align: center;
+
+        }
+        #oldDivs>img, #follow2>img{
+            width: 100%;
+        }
+        #td1{
+            display: none;
+        }
+        #top-products{
+            display: flex;
+           flex-direction: column;
+           align-items: center;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        }
+        @media screen and (min-width: 700px){
+            #oldDivs,#follow2{
+                display: none;
+            }
+            #follow2>img{
+            width: 40%;
+        }
+        #td2{
+            display: none;
+        }
+
         }
     </style>
     <title>carver</title>
@@ -234,30 +273,70 @@
     </video>
    <!--top-products -->
  <div id="top-products">
-        <div id="tdv1">
-            <div><img src="top1.jpg" alt="top1">
+            <div id="td1"><img src="top1.jpg" alt="top1">
                 <p>CARVER 3ø.25" FIREFLY <br>
                     SURF-SKATE 2022 COMPLETE CX</p>
                 <p>$250.00</p>
             </div>
-            <div><img src="top2.jpg" alt="top2">
-                <p>31" J.O.B BLUE TIGER <br>
-                    SURFSKATE 2022 COMPLETE CX</p>
-                <p>$270.00</p>
-            </div>
+        <div id="td1"><img src="top2.jpg" alt="top2">
+            <p>31" J.O.B BLUE TIGER <br>
+                SURFSKATE 2022 COMPLETE CX</p>
+            <p>$270.00</p>
         </div>
-        <div id="tdv2">
-            <div>
-                <p id="centertext"><i>TOP</i>_ PRODUCTS</p>
-                <p>Carver has always been about surfing, <br>
-                    and of capturing that joyous feeling <br>
-                    of flow on a skateboard.</p><button>Go shopping</button>
+        <div>
+            <p id="centertext" style="margin-bottom: 20px;"><i>TOP</i>_ PRODUCTS</p>
+            <p>Carver has always been about surfing, <br>
+                and of capturing that joyous feeling <br>
+                of flow on a skateboard.</p><button>Go shopping</button>
+        </div>
+        <div ><img src="top3.jpg" alt="top3">
+            <p>33.5" J.O.B CAMO TIGER <br>
+                SURFSKATE 2022 COMPLETE C7</p>
+            <p>$285.00</p>
+        </div>
+        <div id="td2"><img src="top1.jpg" alt="top1">
+            <p>CARVER 3ø.25" FIREFLY <br>
+                SURF-SKATE 2022 COMPLETE CX</p>
+            <p>$250.00</p>
+        </div>
+    <div id="td2"><img src="top2.jpg" alt="top2">
+        <p>31" J.O.B BLUE TIGER <br>
+            SURFSKATE 2022 COMPLETE CX</p>
+        <p>$270.00</p>
+    </div>
+    </div>
+
+     <!-- follow insta -->
+  <div id="follow2">
+    <p id="centertext">FOLLOW US <br><i>IN INSTAGRAM</i></p>
+            <p style="margin-bottom: 40px;">Carver is not just surfskates, it's a <br>
+                way of life. Check it out by looking at <br>
+                the photos of our friends on <br>
+                Instagram. And we are waiting for you <br>
+                in our community.</p>
+                <div style="display: flex; width: 100%; justify-content: space-around;">
+                    <img  src="follow2.png" alt="">
+                </div>
+        
+    </div>
+    <div id="follow">
+        <p id="centertext">FOLLOW US <br>
+            <i>IN INSTAGRAM</i></p>
+        <div id="f1d">
+            <div id="f1i">
+                <img style="width: 40% ; margin-left: -50%; margin-top: 47%;" src="follow1.png" alt="">
             </div>
-            <div style="margin-left: 10%;"><img style="width: 98%;" src="top3.jpg" alt="top3">
-                <p>33.5" J.O.B CAMO TIGER <br>
-                    SURFSKATE 2022 COMPLETE C7</p>
-                <p>$285.00</p>
+           <div id="fd2">
+            <div style="margin-top: 25px;" id="fd3">
+                <p style="margin-bottom: 40px;">Carver is not just surfskates, it's a <br>
+                    way of life. Check it out by looking at <br>
+                    the photos of our friends on <br>
+                    Instagram. And we are waiting for you <br>
+                    in our community.</p>
+                <img style="width: 100%; " src="follow2.png" alt="">
             </div>
+            <img style="width: 100%; height: 76.7%;" src="follow3.png" alt="">
+           </div>
         </div>
     </div>
  <!-- about-carver -->
@@ -279,26 +358,20 @@
             <img src="old.png" alt="">
         </div>
     </div>
-  <!-- follow insta -->
-    <div id="follow">
-        <p id="centertext">FOLLOW US <br>
-            <i>IN INSTAGRAM</i></p>
-        <div id="f1d">
-            <div>
-                <img style="width: 40% ; margin-left: -50%; margin-top: 47%;" src="follow1.png" alt="">
-            </div>
-           <div id="fd2">
-            <div style="margin-top: 25px;">
-                <p style="margin-bottom: 40px;">Carver is not just surfskates, it's a <br>
-                    way of life. Check it out by looking at <br>
-                    the photos of our friends on <br>
-                    Instagram. And we are waiting for you <br>
-                    in our community.</p>
-                <img style="width: 100%; height: 52%;" src="follow2.png" alt="">
-            </div>
-            <img style="width: 100%; height: 76.7%;" src="follow3.png" alt="">
-           </div>
+    <div id="oldDivs">
+        <div>
+            <p id="centertext">ABOUT <i> CARVER</i></p>
+            <p>It all started one quiet summer in <br>
+                Venice, California in 1995. Greg Falk <br>
+                and Neil Carver had been surfing all <br>
+                winter, and were pumped to surf <br>
+                the warmer waters of the <br>
+                Breakwater during the long days of <br>
+                summer, but it was as flat as a <br>
+                puddle. Not even a longboard ripple <br>
+                to justify getting wet.</p>
         </div>
+        <img src="about.png" alt="">
     </div>
     <div id="footer">
     </div>
