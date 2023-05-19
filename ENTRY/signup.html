@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+    <div id ="maindiv">
+        <div id="leftdiv">
+            <p id="head"><b>CARVER</b></p>
+            <p>Countless perks--for FREE? It dosen't get better than this.</p>
+            <h3>What's New</h3>
+            <div class="offer">
+                <div><i class="fa-thin fa-truck-fast" style="color: #000000;"></i><img src="data:image/png;base64,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" alt=""></div>
+                <div><h4>FREE SHIPPING</h4></div>
+            </div >
+            <div class="offer" >
+                <div><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXR-XNKUI3EriqVuZ25ZwOPJHSFMoDvYVr9MqDPbtiB6lY3B2q" alt="birthday"></div>
+                <div><h4>BIRTHDAY (& HALF-BIRTHDAY) GIFTS</h4></div>
+            </div>
+            <div class="offer">
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg4z1jcHgI3cKE4V_aOL1ge_RVHL5ZfXnLxGnX3JsiccgSqf3JT4QUmOqUQqMXs24ivUyPf8bmOVo&usqp=CAU&ec=48665699" alt="lock"></div>
+                <div><h4>EASY RETURNS AND REFUNDS & MORE</h4></div>
+            </div>
+            <div id="imgdiv">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMzAt3IidkWekUGn_sJQ2pGWiSPFL4ggffLV7V4JSUYA&usqp=CAU&ec=48665699" alt="leftdiv">
+            </div>
+            
+        </div>
+
+        <div id="rightdiv">
+            <div id="signinlink">
+                <p>Sign up with email</p>
+                <a href="signin.html"><button id="signinbtn"> SIGN IN</button></a>
+            </div>
+           
+            <form >
+                <p>Email Address</p>
+                <input id="email" type="email">
+                <div class="namediv">
+                    <div class="nameclass">
+                        <p>First Name</p>
+                        <input id="firstname" type="text">
+
+                    </div>
+                    <div>
+                        <p>Last Name</p>
+                        <input  id="lastname" type="text">
+                    </div>
+                </div>
+                <div class="passdiv">
+                    <div class="passclass">
+                        <p>Password</p>
+                        <input id ="password" type="password">
+                    </div>
+                    <div>
+                        <p>Country</p>
+                        <select name="Country" id="country">
+                            <option value="US United States"> US United States</option>
+                            <option value="AU Australia">AU Austalia</option>
+                            <option value="AT Austria">AT Austria</option>
+                            <option value="BE Belgium">BE Belgium</option>
+                            <option value="CN China">CN China</option>
+                            <option value="DK"> DK Denmark</option>
+                            <option value="IN India">IN India</option>
+                            <option value="PL Poland">PL Poland</option>
+                            <option value="CH Switzerland">CH Switzerland</option>
+                            <option value="UK">UK United Kingdom</option>
+                        </select>
+                    </div>
+                </div>
+               <button id="createac"> CREATE ACCOUNT</button>
+                <P>By creating account, you agree to Carver Terms &
+                    Conditions Privacy Policy and Terms &  Condition </P>  
+            </form>
+        </div>
+    </div>   
+</body>
+</html>
+<script src="signup.js"></script>
