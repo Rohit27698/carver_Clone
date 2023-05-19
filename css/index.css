@@ -1,0 +1,211 @@
+img {
+    width: 100%;
+  }
+
+  body {
+    margin: auto;
+    background-color: #e6e6e6;
+  }
+
+  #mainImg {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 26vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-bottom: -100px;
+  }
+
+  #mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 100px;
+  }
+
+  #midDiv {
+    font-family: none;
+  }
+
+  #midDiv a {
+    color: black;
+    margin-top: 20px;
+  }
+
+  #lost_collection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  #lostLast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #lostMid {
+    margin-left: -100px;
+  }
+
+  #midDiv {
+    display: flex;
+    flex-direction: column;
+    column-gap: -20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #centertext {
+    font-size: 30px;
+    margin-bottom: -15px;
+  }
+
+  #top-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  #about-carver {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img[src="../images/about.png"] {
+    width: 35%;
+    height: 0%;
+  }
+
+  img[src="../images/old.png"] {
+    width: 40%;
+    height: 40%;
+    margin-top: 36.5%;
+  }
+
+  #oldDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
+
+  #follow {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  #f1d {
+    display: flex;
+  }
+
+  #fd2 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  #midDiv {
+    position: sticky;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 888px) {
+    #minDiv {
+      margin-top: 500px;
+    }
+
+    #follow2 {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    img[src="../images/ts1.png"] {
+      display: none;
+    }
+
+    #mid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #midDiv {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: auto;
+      text-align: center;
+    }
+
+    #mainImg {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      font-size: 26vw;
+      font-family: 'Noto Sans TC', sans-serif;
+      margin-bottom: -25px;
+    }
+  }
+
+  #button {
+    background-color: yellow;
+    width: 250px;
+    height: 40px;
+    border: none;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    #td1,
+    #about-carver,
+    #follow {
+      display: none;
+    }
+
+    #oldDivs,
+    #follow2 {
+      text-align: center;
+    }
+
+    #oldDivs>img,
+    #follow2>img {
+      width: 100%;
+    }
+
+    #top-products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+
+    #td2,
+    #oldDivs,
+    #follow2 {
+      display: none;
+    }
+
+    #follow2>img {
+      width: 40%;
+    }
+  }
