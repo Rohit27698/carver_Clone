@@ -7,7 +7,7 @@
 
    /* Set a background color */
    body {
-     background-color: rgb(83, 81, 81);
+    background-color: #e6e6e6;
      display: flex;
      justify-content: center;
      text-align: center;

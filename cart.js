@@ -1,58 +1,54 @@
-var sample=[
-  {
-    "id": 3,
-    "image": "https://cdn11.bigcommerce.com/s-icfw6t6sn3/images/stencil/380x380/products/699/3816/CarverBingPuckC72023_2Up__80529.1683034466.jpg?c=1",
-    "description": "CARVER X BING 27.5, PUCK SURFSKATE COMPLETE C7 ",
-    "price" :   285,
-    "discount" : "6%off",
-    "Description" : "Bing Copeland began surfing in 1949, at age 13, at the Manhattan Beach pier. Bing opened his first surf shop in the fall of 1959 with his friend Rick Stoner and became one of the major surfboard manufactures of the sixties and early seventy’s",
-    "Truck_Option": "C7",
-    "Truck_Color Option": "Raw",
-    "Wheels": "70MM Concave Smoke 78A",
-    "Bearings": "Built-In",
-    "Grip_Tape": "Sugarcoat",
-    "Hardware": "Stainless Steel",
-    "Length": 37,
-    "Width": 10.875,
-    "Wheelbase": 21.25
-  },
-  {
-    "id": 4,
-    "image": "https://cdn11.bigcommerce.com/s-icfw6t6sn3/images/stencil/380x380/products/698/3813/CarverBingPuckCX2023_2Up__76670.1683034492.jpg?c=1",
-    "description": "CARVER X BING 27.5 PUCK SURFSKATE COMPLETE CX",
-    "price" :   270,
-    "discount" : "18%off",
-    "Description" : "Bing Copeland began surfing in 1949, at age 13, at the Manhattan Beach pier. Bing opened his first surf shop in the fall of 1959 with his friend Rick Stoner and became one of the major surfboard manufactures of the sixties and early seventy’s",
-    "Truck_Option": "C7",
-    "Truck_Color Option": "Raw",
-    "Wheels": "70MM Concave Smoke 78A",
-    "Bearings": "Built-In",
-    "Grip_Tape": "Sugarcoat",
-    "Hardware": "Stainless Steel",
-    "Length": 37,
-    "Width": 10.875,
-    "Wheelbase": 21.25
-  },
-  {
-    "id": 5,
-    "image": "https://cdn11.bigcommerce.com/s-icfw6t6sn3/images/stencil/380x380/products/693/3787/CarverChrysalis2022_1000X1000__44396.1669068179.jpg?c=1",
-    "description": "CARVER 29.5, CHRYSALIS SURFSKATE COMPLETE CX ",
-    "price" :   250,
-    "discount" : "35%off",
-    "Description" : "Bing Copeland began surfing in 1949, at age 13, at the Manhattan Beach pier. Bing opened his first surf shop in the fall of 1959 with his friend Rick Stoner and became one of the major surfboard manufactures of the sixties and early seventy’s",
-    "Truck_Option": "C7",
-    "Truck_Color": "Raw",
-    "Wheels": "70MM Concave Smoke 78A",
-    "Bearings": "Built-In",
-    "Grip_Tape": "Sugarcoat",
-    "Hardware": "Stainless Steel",
-    "Length": 37,
-    "Width": 10.875,
-    "Wheelbase": 21.25
-  },
-]
-localStorage.setItem("cartProducts", JSON.stringify(sample))
-
+// var sample=[
+//   {
+//     "id": 3,
+//     "image": "https://cdn11.bigcommerce.com/s-icfw6t6sn3/images/stencil/380x380/products/699/3816/CarverBingPuckC72023_2Up__80529.1683034466.jpg?c=1",
+//     "description": "CARVER X BING 27.5, PUCK SURFSKATE COMPLETE C7 ",
+//     "price" :   285,
+//     "discount" : "6%off",
+//     "Description" : "Bing Copeland began surfing in 1949, at age 13, at the Manhattan Beach pier. Bing opened his first surf shop in the fall of 1959 with his friend Rick Stoner and became one of the major surfboard manufactures of the sixties and early seventy’s",
+//     "Truck_Option": "C7",
+//     "Truck_Color Option": "Raw",
+//     "Wheels": "70MM Concave Smoke 78A",
+//     "Bearings": "Built-In",
+//     "Grip_Tape": "Sugarcoat",
+//     "Hardware": "Stainless Steel",
+//     "Length": 37,
+//     "Width": 10.875,
+//     "Wheelbase": 21.25
+//   },
+//   {
+//     "id": 4,
+//     "image": "https://cdn11.bigcommerce.com/s-icfw6t6sn3/images/stencil/380x380/products/698/3813/CarverBingPuckCX2023_2Up__76670.1683034492.jpg?c=1",
+//     "description": "CARVER X BING 27.5 PUCK SURFSKATE COMPLETE CX",
+//     "price" :   270,
+//     "discount" : "18%off",
+//     "Description" : "Bing Copeland began surfing in 1949, at age 13, at the Manhattan Beach pier. Bing opened his first surf shop in the fall of 1959 with his friend Rick Stoner and became one of the major surfboard manufactures of the sixties and early seventy’s",
+//     "Truck_Option": "C7",
+//     "Truck_Color Option": "Raw",
+//     "Wheels": "70MM Concave Smoke 78A",
+//     "Bearings": "Built-In",
+//     "Grip_Tape": "Sugarcoat",
+//     "Hardware": "Stainless Steel",
+//     "Length": 37,
+//     "Width": 10.875,
+//     "Wheelbase": 21.25
+//   },
+//   {
+//     "id": 5,
+//     "image": "https://cdn11.bigcommerce.com/s-icfw6t6sn3/images/stencil/380x380/products/693/3787/CarverChrysalis2022_1000X1000__44396.1669068179.jpg?c=1",
+//     "description": "CARVER 29.5, CHRYSALIS SURFSKATE COMPLETE CX ",
+//     "price" :   250,
+//     "discount" : "35%off",
+//     "Description" : "Bing Copeland began surfing in 1949, at age 13, at the Manhattan Beach pier. Bing opened his first surf shop in the fall of 1959 with his friend Rick Stoner and became one of the major surfboard manufactures of the sixties and early seventy’s",
+//     "Truck_Option": "C7",
+//     "Truck_Color": "Raw",
+//     "Wheels": "70MM Concave Smoke 78A",
+//     "Bearings": "Built-In",
+//     "Grip_Tape": "Sugarcoat",
+//     "Hardware": "Stainless Steel",
+//     "Length": 37,
+//     "Width": 10.875,
+//     "Wheelbase": 21.25
 document.querySelector("button").addEventListener("click", check);
 var cart = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
@@ -238,5 +234,5 @@ function showMyCart() {
   };
 }
 document.querySelector("#checkout").addEventListener("click", function () {
-  window.location.href = "address.html";
-})
+  window.location.href = "./address.html";
+})                                                                   

@@ -5,9 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment page</title>
-   <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <!-- <link rel="stylesheet" href="./css/cart.css"> -->
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="./css/footer.css">
+   <link rel="stylesheet" href="./css/pay.css">
 </head>
 <body style="font-family: inter, sans-serif;">
+    <div class="navbar">
+        <div id="slide">
+            <div class="slide-menu">
+                <a href="#" class="close-button"> <img style="height: 3vh;" src="../images/menu.png" alt=""></a>
+                <input type="text" oninput="Debounce(main,1000)" placeholder="Search..." style="background-color: rgb(89, 89, 89) ;width: 97% ;height: 40px;">
+                <a href="surfscates.html">SURFSCATS</a>
+                
+                <a href="extras.html">EXTRAS</a>
+                <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+                <a href="sale.html">SALE</a>
+                <a href="wishlist.html">WHSHLIST</a>
+            </div>
+            <button  class="open-button" onclick="hideButton()"><img style="height: 4vh;" src="../images/menu.png" alt=""></button>
+        </div>
+        <div id="navlogo">
+            <a href="index.html">
+                <img src="https://cdn11.bigcommerce.com/s-icfw6t6sn3/stencil/91c54d50-3507-013a-2f0b-6ad5f58f6a49/e/1e6d1790-c81c-013b-f8e2-56f5867ab34b/img/carver-logo-header.png"
+                    alt="logo"></a>
+        </div>
+        <div id="navmid">
+            <a href="surfscates.html">SURFSCATS</a>
+            <a href="extras.html">EXTRAS</a>
+            <a href="clothsAndAccesories">CLOTHS AND ACCESSORIES</a>
+            <a href="sale.html">SALE</a>
+        </div>
+        <div id="navlast">
+            <a href="login.html"><img id="useri" width="32" height="32" src="../images/user.svg" alt="user"></a>
+            <div class="search-dropdown">
+                <button class="search-button" onclick="toggleSearchInput()">SEARCH</button>
+                <input type="text" class="search-input" oninput="Debounce(main,1000)" placeholder="Search..." />
+            </div>
+            <button style="background-color: #353535; color: white; border: none; font-size: 2.5vh;"  onclick="showMyCart()">BAG</button>
+            <!-- <div class="nykkacart nykaaoverlay"></div>
+            <div class="nykkacart nykaacartdiv" id="nykaacartdiv">
+              <div class="nykaacartinnerdiv">
+                <div class="parent">
+                  <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex;">
+                      <div onclick=" showMyCart()"> <img src="arrow-img.png" alt="" style="width: 35px; cursor: pointer;"></div>
+                      <h2>Bag<span id="per"></span></h2>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+          
+                <div id="child">
+                  <img class="emptycartimage" src="empty-cart-img.PNG" alt="Cart image" />
+                  <div style="color: black; font-weight: bold; font-size: 22px; padding: 0 50px;">Your Shopping Bag is Empty</div>
+                  <div style="color: black; font-weight: normal; font-size: 16px; padding: 15px 50px;">This feels too light! Go
+                    on,
+                    add all your favourites</div>
+                  <div>
+                    <button onclick="showMyCart()"
+                      style="cursor: pointer; padding: 15px 60px; border-radius: 10px; border: 1px solid rgb(0, 0, 0); background-color: rgb(28, 25, 27); color: white; font-size: 16px; font-weight: bold;">Start
+                      Shopping</button>
+                  </div>
+                </div>
+                <div id="bagItems"></div>
+          
+                <div id="grandTotalParent">
+                  <hr>
+                  <div id="gandTotal">
+                    <div id="totalprice">
+                      <div style="color: rgb(0, 19, 37); font-size: 15px;">SUBTOTAL</div>
+                      <div style="color: rgb(68, 64, 64); font-weight: bold; font-size: 20px;">$<span
+                          id="grandTotalPrice">0</span> </div>
+                    </div>
+                    <div id="checkoutBtn">
+                      <button id="checkout">CHECKOUT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+ -->
+
+        </div>
+        <div id="Sml">
+            <a href="login.html"><img width="32" height="32" src="../images/user.svg" alt="user"></a>
+            <button style="background-color: #353535; color: white; border: none; font-size: 2.5vh;"  onclick="showMyCart()">BAG</button>
+            <div class="nykkacart nykaaoverlay"></div>
+            <div class="nykkacart nykaacartdiv" id="nykaacartdiv">
+              <div class="nykaacartinnerdiv">
+                <div class="parent">
+                  <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex;">
+                      <div onclick=" showMyCart()"> <img src="arrow-img.png" alt="" style="width: 35px; cursor: pointer;"></div>
+                      <h2>Bag<span id="per"></span></h2>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+          
+                <div id="child">
+                  <img class="emptycartimage" src="empty-cart-img.PNG" alt="Cart image" />
+                  <div style="color: black; font-weight: bold; font-size: 22px; padding: 0 50px;">Your Shopping Bag is Empty</div>
+                  <div style="color: black; font-weight: normal; font-size: 16px; padding: 15px 50px;">This feels too light! Go
+                    on,
+                    add all your favourites</div>
+                  <div>
+                    <button onclick="showMyCart()"
+                      style="cursor: pointer; padding: 15px 60px; border-radius: 10px; border: 1px solid rgb(0, 0, 0); background-color: rgb(28, 25, 27); color: white; font-size: 16px; font-weight: bold;">Start
+                      Shopping</button>
+                  </div>
+                </div>
+                <div id="bagItems"></div>
+          
+                <div id="grandTotalParent">
+                  <hr>
+                  <div id="gandTotal">
+                    <div id="totalprice">
+                      <div style="color: rgb(0, 19, 37); font-size: 15px;">SUBTOTAL</div>
+                      <div style="color: rgb(68, 64, 64); font-weight: bold; font-size: 20px;">$<span
+                          id="grandTotalPrice">0</span> </div>
+                    </div>
+                    <div id="checkoutBtn">
+                      <button id="checkout">CHECKOUT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+    </div>
      <div id="parent">
             <div id="text_content">
                 <h1>Choose Payment method</h1>
@@ -76,7 +211,7 @@
                         </div>
                             <div id="authentic">
                                 <p>Buy authentic products. Pay securely. Easy returns and exchange.</p>
-                                <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/DesktopRevamp_icons/BuyerAssurance.svg"
+                                <img src="https://img.icons8.com/?size=1x&id=4gkX7WKBMH7z&format=png"
                                  alt="">
                             </div>
                     </div>
@@ -84,6 +219,8 @@
 
         <!-- parent div -->
     </div>
+    <div id="footer"></div>
+<script src = "./src/product.js"></script>
 </body>
 
 <script>
@@ -104,18 +241,18 @@ document.querySelector("#credit").addEventListener("click", showcredit);
 
        var h4 =document.createElement("h4");        //creating h4 tag
        h4.setAttribute("id", "credit_h4");
-       h4.textContent = "One card for all Nykaa Apps";
+       h4.textContent = "One card for CARVER";
        h4.style.fontSize = "20px";
        h4.style.marginTop = "0px";
 
        var card_Number = document.createElement("input");        //creating input for card number tag
        card_Number.setAttribute("id", "credit_card_number");
        card_Number.setAttribute("placeholder", "Card Number");
-       card_Number.style.backgroundColor = " rgb(21, 21, 21)";
+       card_Number.style.backgroundColor = " white";
        card_Number.style.border = " rgb(21, 21, 21)";
        card_Number.style.padding = "14px";
        card_Number.style.margin = "5px";
-       card_Number.style.color = "white";
+       card_Number.style.color = "black";
        
       
 
@@ -127,22 +264,22 @@ document.querySelector("#credit").addEventListener("click", showcredit);
        var card_ex = document.createElement("input");        //creating input for card Expiry tag
        card_ex.setAttribute("id", "credit_card_ex");
        card_ex.setAttribute("placeholder", "Expiry(MM/YY)");
-       card_ex.style.backgroundColor = " rgb(21, 21, 21)";
+       card_ex.style.backgroundColor = " white";
        card_ex.style.border = " rgb(21, 21, 21)";
        card_ex.style.padding = "14px";
        card_ex.style.margin = "5px";
-       card_ex.style.color = "white";
+       card_ex.style.color = "black";
       
 
        var card_cvv = document.createElement("input");       //creating input for card cvv tag
        card_cvv.setAttribute("id", "credit_card_cvv");
        card_cvv.setAttribute("placeholder", "CVV");
-       card_cvv.style.backgroundColor = " rgb(21, 21, 21)";
+       card_cvv.style.backgroundColor = " white";
        card_cvv.style.border = " rgb(21, 21, 21)";
        card_cvv.style.width = "50px";
        card_cvv.style.padding = "14px";
        card_cvv.style.margin = "5px";
-       card_cvv.style.color = "white";
+       card_cvv.style.color = "black";
       
        
 
@@ -224,4 +361,5 @@ document.querySelector("#Grand_total").innerHTML = "$ " + GT;
 
 
 </script>
+<script type="module" src="./src/index.js"></script>
 </html>
